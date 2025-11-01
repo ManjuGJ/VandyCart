@@ -16,7 +16,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-     origin:["http://localhost:5173" , "http://localhost:5174"],
+     origin:["https://vandycart-ui.onrender.com" , "https://vandycart-admin.onrender.com"],
  credentials:true
 }))
 app.use("/api/auth", authRoutes)
